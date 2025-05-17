@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>The 1+1 Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="loading" id="loading">
+            <p>Loading...</p>
+        </div>
+        <main>
+            <div class="calculatorBackground">
+                <h2>The 1+1 Calculator</h2><br>
+                <div class="output">
+                    <p id="output"></p>
+                </div>
+                <div class="buttons">
+                    <button class="numbers" id="one" onclick="displayOne()">1</button>
+                    <button class="numbers" id="plus" onclick="displayPlus()">+</button>
+                    <button class="numbers" id="one2" onclick="displayOne2()">1</button>
+                    <button class="numbers" id="equals" onclick="displayEquals()">=</button>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

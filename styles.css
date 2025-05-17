@@ -1,0 +1,52 @@
+@keyframes slideDown {
+    from {transform: translateY(0)}
+    to {transform: translateY(100dvh)}
+}
+* {margin: 0; padding: 0}
+body {background-color: #F0EBD8; font-family: Sans-Serif}
+.loading {
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    text-align: center;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    padding: 10px;
+    padding-top: 50dvh;
+    z-index: 80;
+    background-color: #D0C9B6;
+}
+.loading.animated {animation: slideDown 1s ease}
+.calculatorBackground {
+    display: block;
+    background-color: #E0DAC7;
+    margin: auto;
+    margin-top: 40dvh;
+    width: 15em;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #888;
+}
+.output {
+    background-color: #F0EBD8;
+    font-size: 1.5em;
+    height: 1em;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.buttons {display: flex; justify-content: space-evenly}
+.numbers {
+    display: grid;
+    width: 3em;
+    height: auto;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 100%;
+    font-size: 1em;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+}
+.numbers:active {scale: 0.9}
