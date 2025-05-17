@@ -1,4 +1,3 @@
-const one = document.getElementById('one');
 const displayOutput = document.getElementById('output');
 
 let isOneAvailable = false;
@@ -28,13 +27,17 @@ function displayEquals() {
         isOnePlusOneAvailable = false
     }
 }
-
+const loadingDisplay = document.getElementById('loading');
 window.addEventListener('load', () => {
-    const loadingDisplay = document.getElementById('loading');
     setTimeout(() => {
-        loadingDisplay.classList.add('animated');
+        loadingDisplay.classList.add('animatedDown');
         setTimeout(() => {
-            loadingDisplay.remove()
+            loadingDisplay.classList.remove('animatedDown');
+            loadingDisplay.style.display = 'none'
         }, 1000)
     }, 200)
+})
+window.addEventListener('beforeunload', () => {
+    loadingDisplay.style.display = 'block'
+    loadingDisplay.classList.add('animatedUp');
 })
