@@ -15,8 +15,8 @@ body {background-color: #F0EBD8; font-family: Sans-Serif}
     z-index: 10;
     background-color: #D0C9B6;
 }
-.loading.animatedDown {animation: slideDown 1s ease}
-.loading.animatedUp {animation: slideUp 0.9s ease}
+.loading.animatedDown {animation: slideDown 0.9s ease}
+.loading.animatedUp {animation: slideUp 0.4s ease}
 .calculatorBackground {
     display: block;
     background-color: #E0DAC7;

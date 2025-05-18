@@ -34,8 +34,8 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             loadingDisplay.classList.remove('animatedDown');
             loadingDisplay.style.display = 'none'
-        }, 1000)
-    }, 200)
+        }, 900)
+    }, 100)
 })
 window.addEventListener('beforeunload', () => {
     loadingDisplay.style.display = 'block'
